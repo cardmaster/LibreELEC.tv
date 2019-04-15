@@ -1,10 +1,10 @@
-# SPDX-License-Identifier: GPL-2.0
+# spdx-License-Identifier: GPL-2.0
 # Copyright (C) 2019-present Team LibreELEC (https://libreelec.tv)
 
 PKG_NAME="image"
 PKG_LICENSE="GPL"
 PKG_SITE="https://libreelec.tv"
-PKG_DEPENDS_TARGET="toolchain squashfs:host dosfstools:host fakeroot:host kmod:host mtools:host populatefs:host libc gcc linux linux-drivers linux-firmware ${BOOTLOADER} busybox util-linux corefonts network misc-packages debug"
+PKG_DEPENDS_TARGET="toolchain squashfs:host dosfstools:host fakeroot:host kmod:host mtools:host populatefs:host libc gcc linux linux-drivers linux-firmware ${BOOTLOADER} busybox util-linux corefonts network leafmod misc-packages debug"
 PKG_SECTION="virtual"
 PKG_LONGDESC="Root package used to build and create complete image"
 

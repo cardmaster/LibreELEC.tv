@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # SPDX-License-Identifier: GPL-2.0-or-later
 # Copyright (C) 2009-2016 Stephan Raue (stephan@openelec.tv)
@@ -79,7 +79,7 @@ function find_addons() {
       `# make entries unique` \
       | sort -u \
       `# select packages with PKG_IS_ADDON=yes (slow, but is a short list, now)` \
-      | xargs -n1 -I{} /bin/bash -c '. ./config/options {} &>/dev/null; [ "$PKG_IS_ADDON" = "yes" ] && echo $PKG_NAME'
+      | xargs -n1 -I{} /usr/bin/env bash -c '. ./config/options {} &>/dev/null; [ "$PKG_IS_ADDON" = "yes" ] && echo $PKG_NAME'
   )
 
   # check if anything is found
